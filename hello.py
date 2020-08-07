@@ -1,2 +1,2 @@
 print("hello")
-print('finally on rasbian')
+print('finally on rasbian fuck yeah')
