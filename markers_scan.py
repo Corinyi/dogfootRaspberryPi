@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
+from Naked.toolshed.shell import execute_js, muterun_js
 import time
 
 try:
@@ -30,9 +31,9 @@ if __name__ == '__main__':
                 idlist.append(markerid) # 마커 리스트에 새로운 마커 아이디 추가(위 코드 없으면 계속해서 마커 리스트에 반복적 추가)
                 # 아래부터는 그냥 내가 임의로 작성한 코드
                 if(markerid == 611):
-                    print("\n\n\n폰: 띠링, 현재 위치는 선릉역, 선릉역 1번 출구입니다.\n도착을 원하시는 역을 말씀해주세요. 띠링~\n")
+                    execute_js(left.js)
                 if(markerid == 743):
-                    print("\n\n폰: 띠링, 강남구청으로 안내를 시작합니다.\n엘리베이터를 타고 지하 1층으로 이동하세요.\n")
+                    execute_js(right.js)
                 if(markerid == 877):
                     print("\n\n폰: 띠링, 지하 1층에 도착하셨습니다. 1블록 직진하세요\n")
                 if(markerid == 2296):

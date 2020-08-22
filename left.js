@@ -11,12 +11,12 @@ app.listen(3000, () => {
  
 // 최상위 라우트로 접속 시 /hello로 리다이렉트 
 app.get("/", (req, res) => {
-  res.redirect('/hello')
+  res.redirect('/left')
 })
  
-app.get("/hello", (req, res) => {
+app.get("/left", (req, res) => {
   // html 파일 로드
-  fs.readFile('index.html', (error, data) => {
+  fs.readFile('left.html', (error, data) => {
     if(error) {
       console.log('error :'+error)
     }
