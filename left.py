@@ -1,16 +1,6 @@
 
 html_left = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <title>hello</title>
-    </head>
-    <body>
-
-    <h2>left</h2>
-
-    </body>
-    </html>
+    left
 """
 
 html_right = """
