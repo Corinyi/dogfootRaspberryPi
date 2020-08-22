@@ -4,25 +4,35 @@
 ##Web site: easycoding.tn     ##
 ################################
 from http.server import BaseHTTPRequestHandler, HTTPServer
+import random
 
 request = None
-text = None
 
 class RequestHandler_httpd(BaseHTTPRequestHandler):
   def do_GET(self):
-    global request, text
-    messagetosend = bytes('hello world',"utf")
+    global request
+    messagetosend = bytes((str((random.randint(1, 100)))),"utf")
     self.send_response(200)
     self.send_header('Content-Type', 'text/plain')
     self.send_header('Content-Length', len(messagetosend))
     self.end_headers()
     self.wfile.write(messagetosend)
-    request = self.requestline
-    request = text[5 : int(len(text)-9)]
     return
 
 
-server_address_httpd = ('192.168.1.5',8080)
+server_address_httpd = ('192.168.0.142',8080)
 httpd = HTTPServer(server_address_httpd, RequestHandler_httpd)
-print('starting server')
+print('Starting server')
 httpd.serve_forever()
+
+'hello world'
+
+self.requestline
+
+print('abc')
+
+request = [5 : int(len()-9)]
+request = request[5 : int(len(request)-9)]
+print(request)
+
+self.requestline
