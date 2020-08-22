@@ -11,7 +11,8 @@ request = None
 class RequestHandler_httpd(BaseHTTPRequestHandler):
   def do_GET(self):
     global request
-    messagetosend = bytes((str((random.randint(1, 100)))),"utf")
+    #messagetosend = bytes((str((random.randint(1, 100)))),"utf")
+    messagetosend = bytes((str(1)),"utf")
     self.send_response(200)
     self.send_header('Content-Type', 'text/plain')
     self.send_header('Content-Length', len(messagetosend))
@@ -31,7 +32,7 @@ self.requestline
 
 print('abc')
 
-request = [5 : int(len()-9)]
+#request = [5 : int(len()-9)]
 request = request[5 : int(len(request)-9)]
 print(request)
 
