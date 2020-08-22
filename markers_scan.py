@@ -35,17 +35,17 @@ if __name__ == '__main__':
                 if(markerid == 743):
                     execute_js(right.js)
                 if(markerid == 877):
-                    print("\n\n폰: 띠링, 지하 1층에 도착하셨습니다. 1블록 직진하세요\n")
+                    execute_js(right.js)
                 if(markerid == 2296):
-                    print("\n\n사용자: 시리야~ 화장실 가고 싶어\n")
+                    execute_js(right.js)
                 if(markerid == 3803):
-                    print("\n\n폰: 화장실로 안내를 시작합니다.\n 1블록 직진하세요\n")
+                    execute_js(left.js)
                 if(markerid == 2312):
-                    print("\n\n폰: 왼쪽방면 5걸음 앞 화장실입니다. 남자화장실은 왼쪽입니다\n")
+                    execute_js(left.js)
                 if(markerid == 2296):
-                    print("\n\n폰: 강남구청으로 안내 시작합니다. 왼쪽방면으로 1블록 이동하세요\n")
+                    execute_js(left.js)
                 if(markerid == 3734):
-                    print("\n\n폰: 왼쪽 방면으로 한 블록 이동하시면 바로 앞에 엘리베이터가 있습니다.\n지하 2층으로 내려가세요\n")
+                    execute_js(left.js)
                 time.sleep(1) # 마커 계속 인식하니까 인식 오류가 조금씩 나서 1초 딜레이 줌
     
             
