@@ -36,7 +36,7 @@ server_address_httpd = ('192.168.0.142',8080)
 print('Starting server')
 
 while(i!=0):
-    i = int(input("좌회전 1 우회전 2: "))
+    i = int(input("left 1 right 2: "))
     if(i == 1):
         httpd = HTTPServer(server_address_httpd, RequestHandler_httpd_left)
     if(i == 2):
