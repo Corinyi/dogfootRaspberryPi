@@ -166,6 +166,13 @@ def detectMarker(ret, mtx, dist, rvecs, tvecs):
 
     return ids, fixedCorners, rvecs, tvecs
 
+# send to server
+
+def html_sending():
+    html_file = open('index.html', 'w')
+    html_file.write(stringList)
+    html_file.close()
+
 # Node and Route information data structure
 
 class markerNode:
@@ -601,6 +608,7 @@ if __name__ == '__main__':
         stringList = dataForNextNode(currentLocation, mode)
         print("step " + str(i))
         print(stringList)
+        html_sending()
 
         routeDataList.deleteHead()
 
