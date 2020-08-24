@@ -610,7 +610,7 @@ if __name__ == '__main__':
         stringList = dataForNextNode(currentLocation, mode)
         print("step " + str(i))
         print(str(stringList))
-        html_sending()
+        html_sending(s)
 
         routeDataList.deleteHead()
 
