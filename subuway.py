@@ -610,6 +610,7 @@ if __name__ == '__main__':
 
         stringList = dataForNextNode(currentLocation, mode)
         print("step " + str(i))
+        stringList.append(str(i))
         print(stringList)
         html_sending(stringList)
 
