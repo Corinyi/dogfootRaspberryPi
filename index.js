@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
 app.get("/hello", (req, res) => {
   // html 파일 로드
-  fs.readFile('test.html', (error, data) => {
+  fs.readFile('index.html', (error, data) => {
     if(error) {
       console.log('error :'+error)
     }
