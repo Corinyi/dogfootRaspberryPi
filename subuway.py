@@ -17,7 +17,7 @@ def generateCharucoBoard():
 def getCharucoBoardImgfromCamera():
     print("press esc to terminate")
     print("press c to capture")
-    cap = cv.VideoCapture(1)
+    cap = cv.VideoCapture(0)
     i = 1 #step
 
     while (1):
