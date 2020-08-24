@@ -168,9 +168,14 @@ def detectMarker(ret, mtx, dist, rvecs, tvecs):
 
 # send to server
 
+def ListToString(s):
+    str1 = " "
+    return (str1.join(s))
+
 def html_sending():
     html_file = open('index.html', 'w')
-    html_file.write(stringList)
+    ListToString(stringList)
+    html_file.write(str1)
     html_file.close()
 
 # Node and Route information data structure
