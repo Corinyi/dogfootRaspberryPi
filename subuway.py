@@ -22,7 +22,7 @@ def generateCharucoBoard():
 def getCharucoBoardImgfromCamera():
     print("press esc to terminate")
     print("press c to capture")
-    cap = cv.VideoCapture(1)
+    cap = cv.VideoCapture(0)
     i = 1 #step
 
     while (1):
@@ -119,7 +119,7 @@ def calibrate_camera(allCorners,allIds,imsize, board):
 # 5. Dectect Id and Calculate the distance, rotation vector from aruco marker by camera
 def detectMarker(ret, mtx, dist, rvecs, tvecs):
     start = time.time()
-    cap = cv.VideoCapture(1)
+    cap = cv.VideoCapture(0)
     i = 1  # step
 
     while (1):
