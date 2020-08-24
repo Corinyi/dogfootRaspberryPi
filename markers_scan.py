@@ -93,21 +93,17 @@ if __name__ == '__main__':
                     ht_right()
                 if(markerid == 3734):
                     ht_left()
-                time.sleep(0.5) # 마커 계속 인식하니까 인식 오류가 조금씩 나서 1초 딜레이 줌
+                time.sleep(0.5) # 마커 계속 인식하니까 인식 오류가 조금씩 나서 0.5초 딜레이 줌
     
             
 
 
-        '''
+        
         cv2.imshow('Test Frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'): # frame 창에서 'q' 입력하면 종료
             break
-        '''
+        
 
-        i = 0
-        if (int(input('종료하려면 1입력: ')) == 1 )
-            break
-        }
         frame_captured, frame = capture.read()
 
     # When everything done, release the capture
