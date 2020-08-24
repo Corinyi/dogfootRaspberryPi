@@ -170,8 +170,8 @@ def detectMarker(ret, mtx, dist, rvecs, tvecs):
 
 def html_sending(s):
     str1 = " "
-    str1.join(s)
-    str2 = "<!DOCTYPE html><html><head><title>hello</title></head><body><h2>" + str1 + "</h2></body></html>"
+    str2 = str1.join(s)
+    str3 = "<!DOCTYPE html><html><head><title>hello</title></head><body><h2>" + str2 + "</h2></body></html>"
     html_file = open('index.html', 'w')
     html_file.write(str2)
     html_file.close()
