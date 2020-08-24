@@ -11,17 +11,25 @@ ssh pi@주소
 ex) ```ssh pi@192.158.1.100```
 
 ```$ ifconfig```
+
 이렇게 해서 라즈베리파이가 연결된 ip 알아놓으세요~ 
+
 ```$ cd Desktop/final/dogfootRaspberryPi```
+
 ```$ node index.js```
+
 서버 시작(브라우저에서 (   ip주소  ):3000  - ex) 192.168.1.100:3000 접속하면 바로 보입니다.)
 
 창 하나 더 띄워서(서버 여는 창 하나, 마커 인식하는 창 하나 총 2개 필요)
 
 ```$ cd ~ ```
+
 ``` $ source dogfoot/bin/activate ```
+
 virtualenv 이름이 dogfoot이고 여기에 필요한 모듈들(openCV, 뭐시기뭐시기 등등) 깔아놓음. dogfoot 으로 작업환경에 들어가는 코드
+
 ```$ python3 subuway.py```
+
 서부외이 파이썬 파일 실행(나머지 코드는 ssh로 실행해도 되는데, 이 코드는 x-server 필요해서 웬만하면 그냥 라즈베리파이 자체에서 실행하세요)
 
 
