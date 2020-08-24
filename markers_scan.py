@@ -98,7 +98,7 @@ if __name__ == '__main__':
             
 
 
-        cv2.imshow('Test Frame', frame)
+        # cv2.imshow('Test Frame', frame)
         if cv2.waitKey(1) & 0xFF == ord('q'): # frame 창에서 'q' 입력하면 종료
             break
         frame_captured, frame = capture.read()
