@@ -1,21 +1,13 @@
+def ht_left():
+    html_file = open('index.html', 'w')
+            html_file.write(html_left)
+            html_file.close()
 
-html_left = """
-    left
-"""
 
-html_right = """
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <title>hello</title>
-    </head>
-    <body>
 
-    <h2>right</h2>
 
-    </body>
-    </html>
-"""
+
+'''
 i=3
 while(i != 0):
     i = int(input("input: "))
@@ -27,3 +19,4 @@ while(i != 0):
         html_file = open('index.html', 'w')
         html_file.write(html_right)
         html_file.close()
+'''
