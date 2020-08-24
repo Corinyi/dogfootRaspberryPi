@@ -3,7 +3,6 @@ from cv2 import aruco
 import numpy as np
 import glob
 import time
-from Naked.toolshed.shell import execute_js, muterun_js
 
 print(cv.__version__)
 print(np.__version__)
@@ -169,10 +168,7 @@ def detectMarker(ret, mtx, dist, rvecs, tvecs):
 
     return ids, fixedCorners, rvecs, tvecs
 
-# Server initialize, Send to server
-
-execute_js('index.js')
-
+# Send to server
 def html_sending(s):
     str1 = " "
     str2 = str1.join(s)
