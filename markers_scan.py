@@ -93,7 +93,7 @@ if __name__ == '__main__':
                     ht_right()
                 if(markerid == 3734):
                     ht_left()
-                time.sleep(1) # 마커 계속 인식하니까 인식 오류가 조금씩 나서 1초 딜레이 줌
+                time.sleep(0.5) # 마커 계속 인식하니까 인식 오류가 조금씩 나서 1초 딜레이 줌
     
             
 
