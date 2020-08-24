@@ -172,7 +172,7 @@ def html_sending(s):
     str1 = " "
     str1.join(s)
     html_file = open('index.html', 'w')
-    html_file.write(s)
+    html_file.write(str1)
     html_file.close()
 
 # Node and Route information data structure
@@ -609,8 +609,8 @@ if __name__ == '__main__':
 
         stringList = dataForNextNode(currentLocation, mode)
         print("step " + str(i))
-        print(str(stringList))
-        html_sending(s)
+        print(stringList)
+        html_sending(stringList)
 
         routeDataList.deleteHead()
 
