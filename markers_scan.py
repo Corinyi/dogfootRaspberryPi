@@ -14,7 +14,7 @@ html_left = """
     </head>
     <body>
 
-    <h2>right</h2>
+    <h2>left</h2>
 
     </body>
     </html>
