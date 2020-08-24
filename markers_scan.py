@@ -41,14 +41,16 @@ except ImportError:
     raise Exception('Error: OpenCv is not installed')
 
 
-execute_js('index.js')
+
 
 
 
 if __name__ == '__main__':
     print('Press "q" to quit')
+    execute_js('index.js')
     capture = cv2.VideoCapture(0)
     idlist = [0]
+    
 
     if capture.isOpened():  # try to get the first frame
         frame_captured, frame = capture.read()
